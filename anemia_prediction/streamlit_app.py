@@ -4,11 +4,11 @@ import numpy as np
 import sklearn
 
 # Memuat model prediksi
-with open('anemia_pred.pkl', 'rb') as f:
+with open('anemia_prediction/anemia_pred.pkl', 'rb') as f:
     model = pickle.load(f)
 
 # Memuat scaler untuk normalisasi data
-with open('scaler.pkl', 'rb') as f:
+with open('anemia_prediction/scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 # Fungsi untuk melakukan prediksi
